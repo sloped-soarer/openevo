@@ -1,0 +1,1017 @@
+EESchema Schematic File Version 4
+LIBS:open_xmega-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title "OpenTX XMEGA"
+Date "2017-1-1"
+Rev "1"
+Comp ""
+Comment1 "Copyright © 2017 R Kilvington (kilvi2013 @ gmail.com)"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L open_xmega-rescue:C C34
+U 1 1 552E928E
+P 1050 850
+F 0 "C34" H 1050 950 40  0000 L CNN
+F 1 "22p" H 1056 765 40  0000 L CNN
+F 2 "modules:SM0805" H 1088 700 30  0001 C CNN
+F 3 "~" H 1050 850 60  0000 C CNN
+	1    1050 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L open_xmega-rescue:C C35
+U 1 1 552E9294
+P 1050 1450
+F 0 "C35" H 1050 1550 40  0000 L CNN
+F 1 "22p" H 1056 1365 40  0000 L CNN
+F 2 "modules:SM0805" H 1088 1300 30  0001 C CNN
+F 3 "~" H 1050 1450 60  0000 C CNN
+	1    1050 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L open_xmega-rescue:GND #PWR01
+U 1 1 552EBA72
+P 6850 1500
+F 0 "#PWR01" H 6850 1500 30  0001 C CNN
+F 1 "GND" H 6850 1430 30  0001 C CNN
+F 2 "" H 6850 1500 60  0000 C CNN
+F 3 "" H 6850 1500 60  0000 C CNN
+	1    6850 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L open_xmega-rescue:CONN_7 P4
+U 1 1 55391CA8
+P 10700 3300
+F 0 "P4" V 10670 3300 60  0000 C CNN
+F 1 "LCD" V 10770 3300 60  0000 C CNN
+F 2 "modules:MOLEX_52808-0770" H 10700 3300 60  0001 C CNN
+F 3 "" H 10700 3300 60  0000 C CNN
+	1    10700 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 2950 10250 2900
+Wire Wire Line
+	10250 2900 10350 2900
+Wire Wire Line
+	10350 2900 10350 3000
+Wire Wire Line
+	9050 3100 10350 3100
+Wire Wire Line
+	9100 3200 10350 3200
+Wire Wire Line
+	9150 3400 10350 3400
+Wire Wire Line
+	9050 3500 10350 3500
+Text Label 9850 3100 0    60   ~ 0
+P4_A0
+Text Label 9800 3200 0    60   ~ 0
+P4_MOSI
+Text Label 9800 3300 0    60   ~ 0
+P4_CS+
+Text Label 9800 3400 0    60   ~ 0
+P4_CLK+
+Text Label 9800 3500 0    60   ~ 0
+P4_RESET-
+Text GLabel 3750 2400 1    47   Input ~ 0
+R_Stick_V
+Text GLabel 3650 2400 1    47   Input ~ 0
+R_Stick_H
+Text GLabel 3550 2400 1    47   Input ~ 0
+L_Stick_V
+Text GLabel 2750 3200 0    47   Input ~ 0
+L_Stick_H
+Text GLabel 2750 3400 0    47   Input ~ 0
+Slider_L
+Text GLabel 2750 3500 0    47   Input ~ 0
+Slider_R
+Text GLabel 2750 4000 0    47   Input ~ 0
+SW_L_1
+Text GLabel 2750 3900 0    47   Input ~ 0
+SW_R_2
+Text GLabel 2750 3800 0    47   Input ~ 0
+SW_R_1
+Text GLabel 2750 3300 0    47   Input ~ 0
+Vin_N
+Text GLabel 2750 3600 0    47   Input ~ 0
+Batt_Mon
+$Comp
+L open_xmega-rescue:CONN_3X2 P7
+U 1 1 555B9D0C
+P 6450 1450
+F 0 "P7" H 6450 1450 50  0000 C CNN
+F 1 "PDI" H 6450 1700 40  0000 C CNN
+F 2 "modules:PinHeader_2x03_P2.54mm_Vertical_missing_3&4" H 6450 1450 60  0001 C CNN
+F 3 "" H 6450 1450 60  0000 C CNN
+	1    6450 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 4150 5500 3    43   Output ~ 0
+uSD_MOSI
+Text GLabel 3950 5500 3    43   Output ~ 0
+uSD_SCK
+$Comp
+L open_xmega-rescue:GND #PWR02
+U 1 1 555B9D7F
+P 2600 1900
+F 0 "#PWR02" H 2600 1900 30  0001 C CNN
+F 1 "GND" H 2600 1830 30  0001 C CNN
+F 2 "" H 2600 1900 60  0000 C CNN
+F 3 "" H 2600 1900 60  0000 C CNN
+	1    2600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L open_xmega-rescue:GND #PWR03
+U 1 1 555B9DA9
+P 1550 4350
+F 0 "#PWR03" H 1550 4350 30  0001 C CNN
+F 1 "GND" H 1550 4280 30  0001 C CNN
+F 2 "" H 1550 4350 60  0000 C CNN
+F 3 "" H 1550 4350 60  0000 C CNN
+	1    1550 4350
+	1    0    0    -1  
+$EndComp
+Text GLabel 5300 6300 2    47   Output ~ 0
+LCD_A0
+Text GLabel 9050 3100 0    47   Input ~ 0
+LCD_A0
+Text GLabel 4850 5500 3    47   Output ~ 0
+LCD_CS_P
+Text GLabel 9100 3300 0    47   Input ~ 0
+LCD_CS_P
+Text GLabel 5850 4700 2    47   Output ~ 0
+LCD_MOSI
+Text GLabel 9100 3200 0    47   Input ~ 0
+LCD_MOSI
+Text GLabel 9150 3400 0    47   Input ~ 0
+LCD_SCK_P
+$Comp
+L open_xmega-rescue:GND #PWR04
+U 1 1 55618DEB
+P 10250 2950
+F 0 "#PWR04" H 10250 2950 30  0001 C CNN
+F 1 "GND" H 10250 2880 30  0001 C CNN
+F 2 "" H 10250 2950 60  0000 C CNN
+F 3 "" H 10250 2950 60  0000 C CNN
+	1    10250 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 3850 5500 3    43   Output ~ 0
+uSD_NSS
+Text GLabel 5850 3200 2    47   Input ~ 0
+CPPM_IN
+Text GLabel 5850 3300 2    47   Output ~ 0
+CPPM_OUT
+Text GLabel 5850 4400 2    47   Output ~ 0
+RF_CSN
+Text GLabel 6150 4100 2    47   Output ~ 0
+RF_TX
+Text GLabel 5850 4200 2    47   Input ~ 0
+RF_RX
+$Comp
+L open_xmega-rescue:C C52
+U 1 1 556B7FC1
+P 10350 3950
+F 0 "C52" H 10350 4050 40  0000 L CNN
+F 1 "100n" H 10356 3865 40  0000 L CNN
+F 2 "modules:SM0805" H 10388 3800 30  0001 C CNN
+F 3 "~" H 10350 3950 60  0000 C CNN
+	1    10350 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L open_xmega-rescue:GND #PWR05
+U 1 1 556B7FC7
+P 10350 4150
+F 0 "#PWR05" H 10350 4150 30  0001 C CNN
+F 1 "GND" H 10350 4080 30  0001 C CNN
+F 2 "" H 10350 4150 60  0000 C CNN
+F 3 "" H 10350 4150 60  0000 C CNN
+	1    10350 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L open_xmega-rescue:C C8
+U 1 1 556B8184
+P 2600 1750
+F 0 "C8" H 2600 1850 40  0000 L CNN
+F 1 "10U" H 2606 1665 40  0000 L CNN
+F 2 "modules:SM1206POL" H 2638 1600 30  0001 C CNN
+F 3 "~" H 2600 1750 60  0000 C CNN
+	1    2600 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L open_xmega-rescue:C C53
+U 1 1 556B819C
+P 1800 4550
+F 0 "C53" H 1800 4650 40  0000 L CNN
+F 1 "100n" H 1806 4465 40  0000 L CNN
+F 2 "modules:SM0805" H 1838 4400 30  0001 C CNN
+F 3 "~" H 1800 4550 60  0000 C CNN
+	1    1800 4550
+	-1   0    0    1   
+$EndComp
+Connection ~ 1200 850 
+Connection ~ 1200 1450
+Wire Wire Line
+	10350 3600 10350 3700
+Wire Wire Line
+	3950 1500 3950 2400
+$Comp
+L open_xmega-rescue:INDUCTOR_SMALL L1
+U 1 1 5578A46B
+P 2600 1250
+F 0 "L1" H 2600 1350 50  0000 C CNN
+F 1 "s.c." H 2600 1200 50  0000 C CNN
+F 2 "modules:SM0805" H 2600 1250 60  0001 C CNN
+F 3 "~" H 2600 1250 60  0000 C CNN
+	1    2600 1250
+	0    1    1    0   
+$EndComp
+Text GLabel 2750 4300 0    47   Output ~ 0
+PWR_HOLD
+Text GLabel 2750 4400 0    39   Input ~ 0
+PWR_SW_STATUS
+Wire Wire Line
+	1200 850  1200 950 
+Wire Wire Line
+	1200 1350 1200 1450
+Wire Wire Line
+	1350 850  1200 850 
+Wire Wire Line
+	1200 1450 1350 1450
+$Comp
+L open_xmega-rescue:+3V3 #PWR06
+U 1 1 557F0590
+P 10150 3700
+AR Path="/557F0590" Ref="#PWR06"  Part="1" 
+AR Path="/5520F715/557F0590" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 10150 3550 50  0001 C CNN
+F 1 "+3V3" V 10150 3900 50  0000 C CNN
+F 2 "" H 10150 3700 60  0000 C CNN
+F 3 "" H 10150 3700 60  0000 C CNN
+	1    10150 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10350 4100 10350 4150
+$Comp
+L open_xmega-rescue:SPEAKER SP1
+U 1 1 55B9A9C6
+P 6500 7400
+F 0 "SP1" H 6400 7650 50  0000 C CNN
+F 1 "PIEZO" H 6400 7150 50  0000 C CNN
+F 2 "modules:Sounder_ABT-436-RC" H 6500 7400 60  0001 C CNN
+F 3 "" H 6500 7400 60  0000 C CNN
+	1    6500 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L open_xmega-rescue:GND #PWR07
+U 1 1 55B9B2EF
+P 6150 7300
+F 0 "#PWR07" H 6150 7300 30  0001 C CNN
+F 1 "GND" H 6150 7230 30  0001 C CNN
+F 2 "" H 6150 7300 60  0000 C CNN
+F 3 "" H 6150 7300 60  0000 C CNN
+	1    6150 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 7300 6200 7300
+Text GLabel 4450 5500 3    47   Output ~ 0
+Piezo_Speaker
+Text GLabel 6200 7500 0    47   Input ~ 0
+Piezo_Speaker
+Text GLabel 4950 5500 3    47   Output ~ 0
+LCD_SCK_P
+Text Notes 8750 2950 0    60   ~ 0
+LCD is clocked at 2MHz
+$Comp
+L open_xmega-rescue:ATxmega256 U1
+U 1 1 5867D873
+P 4300 3950
+F 0 "U1" H 4300 3900 50  0000 C CNN
+F 1 "xmega256D3" H 4300 4000 50  0000 C CNN
+F 2 "modules:TQFP64" H 4300 3800 50  0001 C CNN
+F 3 "DOCUMENTATION" H 4300 3700 50  0001 C CNN
+	1    4300 3950
+	1    0    0    -1  
+$EndComp
+Text GLabel 4050 5500 3    43   Input ~ 0
+uSD_MISO
+Text GLabel 4450 2400 1    47   Input ~ 0
+R_DIGI_DIR
+Text GLabel 4550 2400 1    47   Input ~ 0
+R_DIGI_CLK
+$Comp
+L open_xmega-rescue:+3V3 #PWR08
+U 1 1 586A4C37
+P 1550 4750
+AR Path="/586A4C37" Ref="#PWR08"  Part="1" 
+AR Path="/5520F715/586A4C37" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 1550 4600 50  0001 C CNN
+F 1 "+3V3" H 1550 4900 50  0000 C CNN
+F 2 "" H 1550 4750 60  0000 C CNN
+F 3 "" H 1550 4750 60  0000 C CNN
+	1    1550 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4850 2400 1    47   Input ~ 0
+L_DIGI_DIR
+Text GLabel 4950 2400 1    47   Input ~ 0
+L_DIGI_CLK
+$Comp
+L open_xmega-rescue:+3V3 #PWR09
+U 1 1 586A846F
+P 2600 1000
+AR Path="/586A846F" Ref="#PWR09"  Part="1" 
+AR Path="/5520F715/586A846F" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 2600 850 50  0001 C CNN
+F 1 "+3V3" H 2600 1150 50  0000 C CNN
+F 2 "" H 2600 1000 60  0000 C CNN
+F 3 "" H 2600 1000 60  0000 C CNN
+	1    2600 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4600 2050 4600
+Wire Wire Line
+	2050 4600 2050 4750
+Wire Wire Line
+	2050 4350 2050 4500
+Wire Wire Line
+	2050 4500 2750 4500
+Wire Wire Line
+	1550 4350 1800 4350
+Wire Wire Line
+	2050 4750 1800 4750
+Wire Wire Line
+	1800 4750 1800 4700
+Connection ~ 1800 4750
+Wire Wire Line
+	1800 4400 1800 4350
+Connection ~ 1800 4350
+$Comp
+L open_xmega-rescue:GND #PWR010
+U 1 1 586A9FA5
+P 3950 6700
+F 0 "#PWR010" H 3950 6700 30  0001 C CNN
+F 1 "GND" H 3950 6630 30  0001 C CNN
+F 2 "" H 3950 6700 60  0000 C CNN
+F 3 "" H 3950 6700 60  0000 C CNN
+	1    3950 6700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L open_xmega-rescue:C C1
+U 1 1 586A9FAB
+P 4150 6450
+F 0 "C1" H 4150 6550 40  0000 L CNN
+F 1 "100n" H 4156 6365 40  0000 L CNN
+F 2 "modules:SM0805" H 4188 6300 30  0001 C CNN
+F 3 "~" H 4150 6450 60  0000 C CNN
+	1    4150 6450
+	0    -1   1    0   
+$EndComp
+$Comp
+L open_xmega-rescue:+3V3 #PWR011
+U 1 1 586A9FB2
+P 4350 6700
+AR Path="/586A9FB2" Ref="#PWR011"  Part="1" 
+AR Path="/5520F715/586A9FB2" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 4350 6550 50  0001 C CNN
+F 1 "+3V3" H 4350 6850 50  0000 C CNN
+F 2 "" H 4350 6700 60  0000 C CNN
+F 3 "" H 4350 6700 60  0000 C CNN
+	1    4350 6700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4250 6200 4250 5500
+Wire Wire Line
+	3950 6200 4250 6200
+Wire Wire Line
+	4350 5500 4350 6450
+Wire Wire Line
+	3950 6200 3950 6450
+Wire Wire Line
+	3950 6450 4000 6450
+Connection ~ 3950 6450
+Wire Wire Line
+	4300 6450 4350 6450
+Connection ~ 4350 6450
+$Comp
+L open_xmega-rescue:GND #PWR012
+U 1 1 586AA853
+P 7050 3750
+F 0 "#PWR012" H 7050 3750 30  0001 C CNN
+F 1 "GND" H 7050 3680 30  0001 C CNN
+F 2 "" H 7050 3750 60  0000 C CNN
+F 3 "" H 7050 3750 60  0000 C CNN
+	1    7050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L open_xmega-rescue:C C5
+U 1 1 586AA859
+P 6800 3550
+F 0 "C5" H 6800 3650 40  0000 L CNN
+F 1 "100n" H 6806 3465 40  0000 L CNN
+F 2 "modules:SM0805" H 6838 3400 30  0001 C CNN
+F 3 "~" H 6800 3550 60  0000 C CNN
+	1    6800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L open_xmega-rescue:+3V3 #PWR013
+U 1 1 586AA860
+P 7050 3350
+AR Path="/586AA860" Ref="#PWR013"  Part="1" 
+AR Path="/5520F715/586AA860" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 7050 3200 50  0001 C CNN
+F 1 "+3V3" H 7050 3500 50  0000 C CNN
+F 2 "" H 7050 3350 60  0000 C CNN
+F 3 "" H 7050 3350 60  0000 C CNN
+	1    7050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3500 6550 3500
+Wire Wire Line
+	6550 3500 6550 3350
+Wire Wire Line
+	6550 3750 6550 3600
+Wire Wire Line
+	6550 3600 5850 3600
+Wire Wire Line
+	6550 3750 6800 3750
+Wire Wire Line
+	6550 3350 6800 3350
+Wire Wire Line
+	6800 3350 6800 3400
+Connection ~ 6800 3350
+Wire Wire Line
+	6800 3700 6800 3750
+Connection ~ 6800 3750
+$Comp
+L open_xmega-rescue:GND #PWR014
+U 1 1 586AB4F4
+P 4900 1200
+F 0 "#PWR014" H 4900 1200 30  0001 C CNN
+F 1 "GND" H 4900 1130 30  0001 C CNN
+F 2 "" H 4900 1200 60  0000 C CNN
+F 3 "" H 4900 1200 60  0000 C CNN
+	1    4900 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L open_xmega-rescue:C C2
+U 1 1 586AB4FA
+P 4700 1450
+F 0 "C2" H 4700 1550 40  0000 L CNN
+F 1 "100n" H 4706 1365 40  0000 L CNN
+F 2 "modules:SM0805" H 4738 1300 30  0001 C CNN
+F 3 "~" H 4700 1450 60  0000 C CNN
+	1    4700 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L open_xmega-rescue:+3V3 #PWR015
+U 1 1 586AB500
+P 4500 1200
+AR Path="/586AB500" Ref="#PWR015"  Part="1" 
+AR Path="/5520F715/586AB500" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 4500 1050 50  0001 C CNN
+F 1 "+3V3" H 4500 1350 50  0000 C CNN
+F 2 "" H 4500 1200 60  0000 C CNN
+F 3 "" H 4500 1200 60  0000 C CNN
+	1    4500 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2400 4650 1700
+Wire Wire Line
+	4650 1700 4500 1700
+Wire Wire Line
+	4900 1700 4750 1700
+Wire Wire Line
+	4750 1700 4750 2400
+Wire Wire Line
+	4900 1200 4900 1450
+Wire Wire Line
+	4500 1700 4500 1450
+Wire Wire Line
+	4500 1450 4550 1450
+Connection ~ 4500 1450
+Wire Wire Line
+	4850 1450 4900 1450
+Connection ~ 4900 1450
+Text GLabel 5850 4000 2    47   Input ~ 0
+TRIM_COLUMN_A
+Text GLabel 5850 3900 2    47   Input ~ 0
+TRIM_COLUMN_B
+Text GLabel 5850 3800 2    47   Input ~ 0
+TRIM_COLUMN_C
+Text GLabel 5850 3700 2    47   Input ~ 0
+TRIM_COLUMN_D
+Text GLabel 5850 3400 2    47   Output ~ 0
+TRIM_ROW_A
+Text Notes 3900 4350 0    60   ~ 0
+* Remap SPIC pins.
+$Comp
+L open_xmega-rescue:GND #PWR016
+U 1 1 5868E7CD
+P 7100 4900
+F 0 "#PWR016" H 7100 4900 30  0001 C CNN
+F 1 "GND" H 7100 4830 30  0001 C CNN
+F 2 "" H 7100 4900 60  0000 C CNN
+F 3 "" H 7100 4900 60  0000 C CNN
+	1    7100 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L open_xmega-rescue:C C17
+U 1 1 5868E7D3
+P 6850 4700
+F 0 "C17" H 6850 4800 40  0000 L CNN
+F 1 "100n" H 6856 4615 40  0000 L CNN
+F 2 "modules:SM0805" H 6888 4550 30  0001 C CNN
+F 3 "~" H 6850 4700 60  0000 C CNN
+	1    6850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L open_xmega-rescue:+3V3 #PWR017
+U 1 1 5868E7DA
+P 7100 4500
+AR Path="/5868E7DA" Ref="#PWR017"  Part="1" 
+AR Path="/5520F715/5868E7DA" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 7100 4350 50  0001 C CNN
+F 1 "+3V3" H 7100 4650 50  0000 C CNN
+F 2 "" H 7100 4500 60  0000 C CNN
+F 3 "" H 7100 4500 60  0000 C CNN
+	1    7100 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4500 6850 4500
+Wire Wire Line
+	6550 4600 5850 4600
+Wire Wire Line
+	6550 4900 6850 4900
+Wire Wire Line
+	6850 4500 6850 4550
+Connection ~ 6850 4500
+Wire Wire Line
+	6850 4850 6850 4900
+Connection ~ 6850 4900
+Text GLabel 4150 2400 1    47   BiDi ~ 0
+XTAL2
+Text GLabel 4050 2400 1    47   BiDi ~ 0
+XTAL1
+$Comp
+L open_xmega-rescue:CRYSTAL_SMD_2_PIN X1
+U 1 1 586902BB
+P 1200 1150
+F 0 "X1" V 1250 1000 50  0000 C CNN
+F 1 "4MHz" V 1150 850 50  0000 L CNN
+F 2 "modules:Crystal_SMD_HC49-SD" H 1200 1150 60  0001 C CNN
+F 3 "" H 1200 1150 60  0000 C CNN
+	1    1200 1150
+	0    1    1    0   
+$EndComp
+Text GLabel 1350 850  2    47   BiDi ~ 0
+XTAL1
+Text GLabel 1350 1450 2    47   BiDi ~ 0
+XTAL2
+$Comp
+L open_xmega-rescue:GND #PWR018
+U 1 1 58691112
+P 900 850
+F 0 "#PWR018" H 900 850 30  0001 C CNN
+F 1 "GND" H 900 780 30  0001 C CNN
+F 2 "" H 900 850 60  0000 C CNN
+F 3 "" H 900 850 60  0000 C CNN
+	1    900  850 
+	0    1    1    0   
+$EndComp
+$Comp
+L open_xmega-rescue:GND #PWR019
+U 1 1 58691162
+P 900 1450
+F 0 "#PWR019" H 900 1450 30  0001 C CNN
+F 1 "GND" H 900 1380 30  0001 C CNN
+F 2 "" H 900 1450 60  0000 C CNN
+F 3 "" H 900 1450 60  0000 C CNN
+	1    900  1450
+	0    1    1    0   
+$EndComp
+$Comp
+L open_xmega-rescue:+3V3 #PWR020
+U 1 1 58694B65
+P 6850 1300
+AR Path="/58694B65" Ref="#PWR020"  Part="1" 
+AR Path="/5520F715/58694B65" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 6850 1150 50  0001 C CNN
+F 1 "+3V3" H 6850 1450 50  0000 C CNN
+F 2 "" H 6850 1300 60  0000 C CNN
+F 3 "" H 6850 1300 60  0000 C CNN
+	1    6850 1300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 2400 1    47   BiDi ~ 0
+RESET_N/PDI_CLK
+Text GLabel 4350 2400 1    47   BiDi ~ 0
+PDI_DATA
+Text GLabel 6050 1300 0    47   BiDi ~ 0
+PDI_DATA
+Text GLabel 6050 1500 0    47   BiDi ~ 0
+RESET_N/PDI_CLK
+Text GLabel 2750 4100 0    47   Input ~ 0
+SW_L_2
+Text GLabel 2750 5350 0    47   BiDi ~ 0
+SDA-FRAM-RTC
+Text GLabel 2750 5500 0    47   Output ~ 0
+SCL-FRAM-RTC
+Text GLabel 6150 4300 2    47   Output ~ 0
+RF_SCK
+Text GLabel 5050 2400 1    47   Output ~ 0
+Trainer_Master_N
+$Comp
+L open_xmega-rescue:R R8
+U 1 1 58C548E3
+P 9500 3750
+F 0 "R8" V 9450 3550 40  0000 C CNN
+F 1 "10K" V 9500 3750 40  0000 C CNN
+F 2 "modules:SM0805" V 9430 3750 30  0001 C CNN
+F 3 "~" H 9500 3750 30  0000 C CNN
+	1    9500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L open_xmega-rescue:GND #PWR021
+U 1 1 58C54AB3
+P 9700 4150
+F 0 "#PWR021" H 9700 4150 30  0001 C CNN
+F 1 "GND" H 9700 4080 30  0001 C CNN
+F 2 "" H 9700 4150 60  0000 C CNN
+F 3 "" H 9700 4150 60  0000 C CNN
+	1    9700 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 4200 0    47   Input ~ 0
+KEYBOARD
+Text GLabel 3650 5500 3    39   Output ~ 0
+PWR_LED/BACKLIGHT
+Wire Wire Line
+	2750 4700 2750 5350
+Wire Wire Line
+	2750 5500 3550 5500
+$Comp
+L open_xmega-rescue:Micro_SD_Card J2
+U 1 1 59865280
+P 10000 2100
+F 0 "J2" H 9350 2700 50  0000 C CNN
+F 1 "Micro_SD_Card" H 10650 2700 50  0000 R CNN
+F 2 "modules:HRS_uSD_DM3CS" H 11150 2400 50  0001 C CNN
+F 3 "" H 10000 2100 50  0001 C CNN
+	1    10000 2100
+	1    0    0    1   
+$EndComp
+Text GLabel 9100 1800 0    43   Output ~ 0
+uSD_MISO
+Text GLabel 9100 2000 0    43   Input ~ 0
+uSD_SCK
+Text GLabel 9100 2200 0    43   Input ~ 0
+uSD_MOSI
+Text GLabel 8400 2450 0    43   Input ~ 0
+uSD_NSS
+NoConn ~ 9100 1700
+NoConn ~ 9100 2400
+$Comp
+L open_xmega-rescue:C C55
+U 1 1 598680CD
+P 8400 2000
+F 0 "C55" H 8400 2100 40  0000 L CNN
+F 1 "100n" H 8406 1915 40  0000 L CNN
+F 2 "modules:SM0805" H 8438 1850 30  0001 C CNN
+F 3 "~" H 8400 2000 60  0000 C CNN
+	1    8400 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2150 8700 2100
+Wire Wire Line
+	8050 2150 8400 2150
+Wire Wire Line
+	9100 1900 8700 1900
+Wire Wire Line
+	8700 1900 8700 1850
+Wire Wire Line
+	8700 1850 8400 1850
+$Comp
+L open_xmega-rescue:GND #PWR022
+U 1 1 5986843B
+P 8200 1850
+F 0 "#PWR022" H 8200 1850 30  0001 C CNN
+F 1 "GND" H 8200 1780 30  0001 C CNN
+F 2 "" H 8200 1850 60  0000 C CNN
+F 3 "" H 8200 1850 60  0000 C CNN
+	1    8200 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 8400 1850
+$Comp
+L open_xmega-rescue:R R4
+U 1 1 59868DC5
+P 8550 2300
+F 0 "R4" H 8450 2300 40  0000 C CNN
+F 1 "10K" V 8550 2300 40  0000 C CNN
+F 2 "modules:SM0805" V 8480 2300 30  0001 C CNN
+F 3 "~" H 8550 2300 30  0000 C CNN
+	1    8550 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L open_xmega-rescue:+3V3 #PWR023
+U 1 1 59869229
+P 8050 2150
+AR Path="/59869229" Ref="#PWR023"  Part="1" 
+AR Path="/5520F715/59869229" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 8050 2000 50  0001 C CNN
+F 1 "+3V3" V 8050 2350 50  0000 C CNN
+F 2 "" H 8050 2150 60  0000 C CNN
+F 3 "" H 8050 2150 60  0000 C CNN
+	1    8050 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 8400 2150
+Wire Wire Line
+	9100 2300 8900 2300
+$Comp
+L open_xmega-rescue:GND #PWR024
+U 1 1 5986ACB9
+P 10850 1500
+F 0 "#PWR024" H 10850 1500 30  0001 C CNN
+F 1 "GND" H 10850 1430 30  0001 C CNN
+F 2 "" H 10850 1500 60  0000 C CNN
+F 3 "" H 10850 1500 60  0000 C CNN
+	1    10850 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 1500 10850 1500
+NoConn ~ 9100 1500
+Text Notes 8550 1400 0    60   ~ 0
+uSD CARD is clocked at 16MHz
+$Comp
+L open_xmega-rescue:CONN_01X05 J4
+U 1 1 59B54244
+P 1250 6500
+F 0 "J4" H 1250 6800 50  0000 C CNN
+F 1 "RTC_FRAM" V 1350 6500 50  0000 C CNN
+F 2 "modules:AVX_00-9159005551X06" H 1250 6500 50  0001 C CNN
+F 3 "" H 1250 6500 50  0001 C CNN
+	1    1250 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L open_xmega-rescue:GND #PWR025
+U 1 1 59B54A58
+P 1450 6700
+F 0 "#PWR025" H 1450 6700 30  0001 C CNN
+F 1 "GND" H 1450 6630 30  0001 C CNN
+F 2 "" H 1450 6700 60  0000 C CNN
+F 3 "" H 1450 6700 60  0000 C CNN
+	1    1450 6700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L open_xmega-rescue:+3V3 #PWR026
+U 1 1 59B54AB1
+P 2400 6600
+AR Path="/59B54AB1" Ref="#PWR026"  Part="1" 
+AR Path="/5520F715/59B54AB1" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 2400 6450 50  0001 C CNN
+F 1 "+3V3" H 2400 6750 50  0000 C CNN
+F 2 "" H 2400 6600 60  0000 C CNN
+F 3 "" H 2400 6600 60  0000 C CNN
+	1    2400 6600
+	1    0    0    -1  
+$EndComp
+Text GLabel 1450 6500 2    47   BiDi ~ 0
+LCD_RESET_N
+Text GLabel 1450 6400 2    47   BiDi ~ 0
+SDA-FRAM-RTC
+Text GLabel 1450 6300 2    47   Input ~ 0
+SCL-FRAM-RTC
+Wire Wire Line
+	2400 6600 1450 6600
+Text GLabel 4750 5500 3    47   Output ~ 0
+TELEM_BL_TX
+Text GLabel 4650 5500 3    47   Input ~ 0
+TELEM_BL_RX
+Wire Wire Line
+	4550 5500 4550 6300
+Wire Wire Line
+	4550 6300 5300 6300
+Text GLabel 9050 3500 0    47   Input ~ 0
+LCD_RESET_N
+Text Label 5600 5800 2    39   ~ 0
+VOICE_BUSY
+Text Label 3550 6350 2    39   ~ 0
+VOICE_TXD
+Wire Wire Line
+	3850 1900 3850 2400
+Wire Wire Line
+	10150 3700 10350 3700
+Connection ~ 10350 3700
+Text GLabel 2750 1550 2    60   Input ~ 0
+AVCC
+$Comp
+L open_xmega-rescue:GND #PWR027
+U 1 1 5B9B09DC
+P 3850 1500
+F 0 "#PWR027" H 3850 1500 30  0001 C CNN
+F 1 "GND" H 3850 1430 30  0001 C CNN
+F 2 "" H 3850 1500 60  0000 C CNN
+F 3 "" H 3850 1500 60  0000 C CNN
+	1    3850 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 3400 1550 0    60   Input ~ 0
+AVCC
+Wire Wire Line
+	2600 1500 2600 1550
+Wire Wire Line
+	2600 1550 2750 1550
+Connection ~ 2600 1550
+Wire Wire Line
+	3550 1550 3550 1900
+Wire Wire Line
+	3550 1900 3850 1900
+Wire Wire Line
+	3950 1500 3850 1500
+Wire Wire Line
+	3400 1550 3550 1550
+Wire Wire Line
+	8900 2300 8900 2450
+Wire Wire Line
+	8700 2100 9100 2100
+Connection ~ 8550 2150
+Wire Wire Line
+	8900 2450 8550 2450
+Connection ~ 8550 2450
+Text Notes 5600 5450 0    50   ~ 0
+Maybe use C3 which has USB.\nMaybe use A3U / A3BU. More USARTs.\nCould use 192 variants.
+Text Notes 7550 3700 0    60   ~ 0
+Maybe add hardware inverter on cs line.
+$Comp
+L open_xmega-rescue:+3V3 #PWR028
+U 1 1 5C432FC6
+P 9300 4150
+AR Path="/5C432FC6" Ref="#PWR028"  Part="1" 
+AR Path="/5520F715/5C432FC6" Ref="#PWR028"  Part="1" 
+F 0 "#PWR028" H 9300 4000 50  0001 C CNN
+F 1 "+3V3" V 9300 4350 50  0000 C CNN
+F 2 "" H 9300 4150 60  0000 C CNN
+F 3 "" H 9300 4150 60  0000 C CNN
+	1    9300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L open_xmega-rescue:R R21
+U 1 1 5C43AF82
+P 6000 4100
+F 0 "R21" V 5950 3900 40  0000 C CNN
+F 1 "1K" V 6000 4100 40  0000 C CNN
+F 2 "modules:SM0805" V 5930 4100 30  0001 C CNN
+F 3 "~" H 6000 4100 30  0000 C CNN
+	1    6000 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L open_xmega-rescue:R R35
+U 1 1 5C43B075
+P 6000 4300
+F 0 "R35" V 5950 4100 40  0000 C CNN
+F 1 "1K" V 6000 4300 40  0000 C CNN
+F 2 "modules:SM0805" V 5930 4300 30  0001 C CNN
+F 3 "~" H 6000 4300 30  0000 C CNN
+	1    6000 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 4600 6550 4900
+Wire Wire Line
+	5050 5500 5050 5800
+Wire Wire Line
+	5050 5800 5600 5800
+Wire Wire Line
+	2750 3700 1750 3700
+Wire Wire Line
+	1800 4750 1550 4750
+Wire Wire Line
+	1800 4350 2050 4350
+Wire Wire Line
+	3950 6450 3950 6700
+Wire Wire Line
+	4350 6450 4350 6700
+Wire Wire Line
+	6800 3350 7050 3350
+Wire Wire Line
+	6800 3750 7050 3750
+Wire Wire Line
+	4500 1450 4500 1200
+Wire Wire Line
+	4900 1450 4900 1700
+Wire Wire Line
+	6850 4500 7100 4500
+Wire Wire Line
+	6850 4900 7100 4900
+Wire Wire Line
+	8400 1850 8200 1850
+Wire Wire Line
+	8400 2150 8550 2150
+Wire Wire Line
+	10350 3700 10350 3800
+Wire Wire Line
+	2600 1550 2600 1600
+Wire Wire Line
+	8550 2150 8700 2150
+Wire Wire Line
+	8550 2450 8400 2450
+$Comp
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 5C75E403
+P 9500 4150
+F 0 "JP1" H 9500 4262 50  0000 C CNN
+F 1 "SolderJumper_3_Open" H 9500 4353 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9500 4150 50  0001 C CNN
+F 3 "~" H 9500 4150 50  0001 C CNN
+	1    9500 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9100 3300 9500 3300
+Wire Wire Line
+	9500 3600 9500 3300
+Connection ~ 9500 3300
+Wire Wire Line
+	9500 3300 10350 3300
+Wire Wire Line
+	9500 3900 9500 4000
+Text Label 1900 3700 0    60   ~ 0
+AREFB
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5C748BD5
+P 5600 5800
+F 0 "TP3" V 5554 5988 50  0000 L CNN
+F 1 "TestPoint" V 5645 5988 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 5800 5800 50  0001 C CNN
+F 3 "~" H 5800 5800 50  0001 C CNN
+	1    5600 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5C748E47
+P 3150 6350
+F 0 "TP2" V 3345 6424 50  0000 C CNN
+F 1 "TestPoint" V 3254 6424 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3350 6350 50  0001 C CNN
+F 3 "~" H 3350 6350 50  0001 C CNN
+	1    3150 6350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 6350 3150 6350
+Wire Wire Line
+	3750 5500 3750 6350
+Text GLabel 1450 3700 0    47   Input ~ 0
+Vin_N
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5C79CB74
+P 1600 3700
+F 0 "JP2" H 1600 3905 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 1600 3814 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1600 3700 50  0001 C CNN
+F 3 "~" H 1600 3700 50  0001 C CNN
+	1    1600 3700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

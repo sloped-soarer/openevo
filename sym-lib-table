@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name open_xmega-rescue)(type Legacy)(uri ${KIPRJMOD}/open_xmega-rescue.lib)(options "")(descr ""))
+  (lib (name MCP6001)(type Legacy)(uri ${KIPRJMOD}/share/library/MCP6001.lib)(options "")(descr ""))
+)
