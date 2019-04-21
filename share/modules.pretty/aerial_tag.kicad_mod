@@ -1,0 +1,9 @@
+(module aerial_tag (layer F.Cu) (tedit 5B6BFA3F)
+  (fp_text reference P12 (at 0 -2.262742) (layer F.SilkS) hide
+    (effects (font (size 0.7 0.7) (thickness 0.15)))
+  )
+  (fp_text value MPX_Aerial (at 0 2.1) (layer F.SilkS) hide
+    (effects (font (size 0.7 0.7) (thickness 0.15)))
+  )
+  (pad 1 thru_hole oval (at 0 0) (size 4.5 2.5) (drill 1.7) (layers *.Cu *.Mask))
+)
