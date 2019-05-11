@@ -1,4 +1,4 @@
-(module SW_COMAX6_SPDT locked (layer F.Cu) (tedit 5B714B12)
+(module SW_COMAX6_SPDT locked (layer F.Cu) (tedit 5B6BF78C)
   (fp_text reference SW23 (at 0 1.7) (layer F.SilkS) hide
     (effects (font (size 0.7 0.7) (thickness 0.15)))
   )
@@ -17,8 +17,8 @@
   (fp_line (start 6 -2.5) (end 6 2.5) (layer F.SilkS) (width 0.2))
   (fp_line (start 6 2.5) (end -6 2.5) (layer F.SilkS) (width 0.2))
   (fp_line (start -6 2.5) (end -6 -2.5) (layer F.SilkS) (width 0.2))
-  (pad "" np_thru_hole circle (at -6 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
-  (pad "" np_thru_hole circle (at 6 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
+  (pad "" thru_hole circle (at -6 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask F.SilkS))
+  (pad "" thru_hole circle (at 6 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask F.SilkS))
   (pad 2 thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
   (pad 1 thru_hole circle (at -3 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
   (pad 3 thru_hole circle (at 3 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))

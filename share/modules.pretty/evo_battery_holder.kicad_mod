@@ -1,5 +1,5 @@
-(module evo_battery_holder locked (layer F.Cu) (tedit 5B71CC71)
-  (fp_text reference batt_holder1 (at -4 0 90) (layer F.SilkS) hide
+(module evo_battery_holder locked (layer F.Cu) (tedit 56D9E18B)
+  (fp_text reference batt_holder2 (at -4 0 90) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value MISC_MECH (at 4 0 90) (layer F.SilkS) hide
@@ -15,7 +15,7 @@
   (fp_line (start -5 -5) (end -5 -24) (layer F.SilkS) (width 0.15))
   (fp_line (start -5 -24) (end 5 -24) (layer F.SilkS) (width 0.15))
   (fp_line (start 5 -24) (end 5 -5) (layer F.SilkS) (width 0.15))
-  (pad "" np_thru_hole circle (at 0 -14.5) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.Mask))
   (pad 1 thru_hole circle (at 0 0) (size 4 4) (drill 2) (layers *.Cu *.Mask F.SilkS))
-  (pad "" np_thru_hole circle (at 0 12.35) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.Mask))
+  (pad "" thru_hole circle (at 0 -14.5) (size 4 4) (drill 1.6) (layers *.Cu *.Mask F.SilkS))
+  (pad "" thru_hole circle (at 0 12.35) (size 4 4) (drill 1.6) (layers *.Cu *.Mask F.SilkS))
 )

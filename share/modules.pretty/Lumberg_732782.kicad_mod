@@ -1,4 +1,4 @@
-(module Lumberg_732782 (layer F.Cu) (tedit 5BED7329)
+(module Lumberg_732782 (layer F.Cu) (tedit 5B6BF92E)
   (descr "Pin strip 2pin")
   (tags "CONN DEV")
   (fp_text reference P8 (at 0 -2) (layer F.SilkS) hide
@@ -17,6 +17,6 @@
   (fp_line (start -5 -4) (end 5 -4) (layer F.SilkS) (width 0.3))
   (fp_line (start 3 4) (end 5 4) (layer F.SilkS) (width 0.3))
   (fp_line (start -5 4) (end -3 4) (layer F.SilkS) (width 0.3))
-  (pad 2 thru_hole rect (at -1.25 0) (size 1.524 2.19964) (drill 1) (layers *.Cu *.Mask))
-  (pad 1 thru_hole oval (at 1.25 0) (size 1.524 2.19964) (drill 1) (layers *.Cu *.Mask))
+  (pad 1 thru_hole rect (at -1.25 0) (size 1.524 2.19964) (drill 1) (layers *.Cu *.Mask))
+  (pad 2 thru_hole oval (at 1.25 0) (size 1.524 2.19964) (drill 1) (layers *.Cu *.Mask))
 )
